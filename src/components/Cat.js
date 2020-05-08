@@ -15,7 +15,8 @@ class Cat extends React.Component {
                     precision={0.5}
                     onChange={(event, newValue) => {
                         this.props.setCatRating(catModel.id, newValue);
-                    }} />
+                    }}
+                    data-test-id="ratingComponent" />
             </div>
         );
     }
